@@ -6,23 +6,90 @@
     <link href="./assets/output.css" rel="stylesheet" />
   </head>
 
-  <body>
-    <h1 class="text-3xl font-bold underline text-blue-950">Hello world!</h1>
+  <body class="p-4">
+    <h2 class="text-3xl font-bold underline text-blue-900">
+      Conceitos fundamentais
+    </h2>
 
-    <button class="btn-green">Botão</button>
+    <div class="container bg-green-100 p-4 m-4">
+      <button class="btn-green">Botão</button>
 
-    <button class="btn-red">Botão</button>
+      <button class="btn-red">Botão</button>
+
+      <div
+        class="w-4 h-4 m-4 bg-green-400 md:w-6 md:h-6 md:m-6 md:bg-red-400 lg:h-10 lg:m-10 lg:bg-blue-400 xl:bg-yellow-400"
+      ></div>
+
+      <div>
+        <input
+          type="text"
+          placeholder="Clica em mim"
+          class="bg-gray-300 text-gray-300 focus:bg-red-600 focus:text-red-400"
+        />
+      </div>
+    </div>
+
+    <h2 class="text-3xl font-bold underline text-red-600">Layouts</h2>
 
     <div
-      class="w-4 h-4 m-4 bg-green-400 md:w-6 md:h-6 md:m-6 md:bg-red-400 lg:h-10 lg:m-10 lg:bg-blue-400 xl:bg-yellow-400"
+      class="container bg-red-300 mx-auto m-4 p-2 border-red-900 border-2"
     ></div>
 
-    <div>
-      <input
-        type="text"
-        placeholder="Clica em mim"
-        class="bg-gray-300 text-gray-300 focus:bg-red-600 focus:text-red-400"
-      />
+    <div class="container bg-green-300 m-4 p-2 md:bg-blue-900">
+      <p class="text-white">Exercicio 1</p>
+    </div>
+
+    <div
+      class="container bg-purple-400 border-2 border-cyan-900 m-4 text-white border-box p-10"
+    >
+      <p>Border Box</p>
+    </div>
+
+    <div
+      class="container bg-cyan-400 border-2 border-purple-900 m-4 text-white box-content p-10"
+    >
+      <p>Box Content</p>
+    </div>
+
+    <div class="container">
+      <span class="block bg-red-300">Não são elementos de bloco</span>
+      <span class="block">Não são elementos de bloco</span>
+
+      <div class="bg-blue-500">Bloco</div>
+      <div class="bg-blue-500">Bloco</div>
+
+      <div class="bg-red-500 inline-block">Inline</div>
+      <div class="bg-red-500 inline-block">Inline</div>
+
+      <div class="bg-green-900 hidden">Estou aparecendo</div>
+    </div>
+
+    <div class="container bg-emerald-200">
+      <div class="bg-red-500 inline-block">Div 1</div>
+      <div class="bg-purple-500 inline-block">Div 2</div>
+      <div class="bg-amber-500 inline-block">Div 3</div>
+    </div>
+
+    <div class="container overflow-hidden h-16 m-6 bg-slate-200">
+      <p>Testando overflow</p>
+      <p>Testando overflow</p>
+      <p>Testando overflow</p>
+      <p>Testando overflow</p>
+      <p>Testando overflow</p>
+      <p>Testando overflow</p>
+      <p>Testando overflow</p>
+    </div>
+
+    <div class="container overflow-hidden overflow-x-auto h-16 m-6 bg-teal-200">
+      aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+    </div>
+
+    <div class="relative">
+      <div class="absolute top-0 right-0 bg-pink-900">Absolute</div>
+    </div>
+
+    <div class="container bg-red-800 h-10 relative">
+      <div class="bg-teal-800 absolute bottom-0 right-0">Container</div>
     </div>
   </body>
 </html>
